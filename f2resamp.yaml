@@ -1,0 +1,53 @@
+expressions:
+  bre:
+    abbr: bre
+    default_value: 0
+    flag: B
+    is_flag: true
+    max: 100
+    min: 50
+    name: Breath
+    type: Numerical
+  fmts:
+    abbr: fmts
+    is_flag: true
+    name: Formant Filter Off
+    options:
+    - ''
+    - N
+    type: Options
+  gen:
+    abbr: gen
+    default_value: 0
+    flag: g
+    is_flag: true
+    max: 100
+    min: -100
+    name: Gender
+    type: Numerical
+  pit:
+    abbr: pit
+    default_value: 0
+    flag: t
+    is_flag: true
+    max: 1200
+    min: -1200
+    name: Pitch deviation (flag)
+    type: Numerical
+  pkcp:
+    abbr: pkcp
+    default_value: 86
+    flag: P
+    is_flag: true
+    max: 100
+    min: 0
+    name: Peak Compressor
+    type: Numerical
+  rev:
+    abbr: rev
+    is_flag: true
+    name: Reverse
+    options:
+    - ''
+    - R
+    type: Options

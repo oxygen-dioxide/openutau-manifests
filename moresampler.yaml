@@ -1,0 +1,136 @@
+expressions:
+  amp:
+    abbr: amp
+    default_value: 0
+    flag: A
+    is_flag: true
+    max: 100
+    min: -100
+    name: Amplitude Modulation
+    type: Numerical
+  cors:
+    abbr: cors
+    default_value: 0
+    flag: MC
+    is_flag: true
+    max: 100
+    min: 0
+    name: Coarseness
+    type: Numerical
+  dist:
+    abbr: dist
+    default_value: 0
+    flag: MD
+    is_flag: true
+    max: 100
+    min: 0
+    name: Distortion
+    type: Numerical
+  dry:
+    abbr: dry
+    default_value: 0
+    flag: Md
+    is_flag: true
+    max: 100
+    min: -100
+    name: Dryness
+    type: Numerical
+  fstr:
+    abbr: fstr
+    is_flag: true
+    name: Force Stretch
+    options:
+    - ''
+    - e
+    - Me
+    type: Options
+  gen:
+    abbr: gen
+    default_value: 0
+    flag: g
+    is_flag: true
+    max: 100
+    min: -100
+    name: Gender
+    type: Numerical
+  grwl:
+    abbr: grwl
+    default_value: 0
+    flag: MG
+    is_flag: true
+    max: 100
+    min: 0
+    name: Growl
+    type: Numerical
+  mbre:
+    abbr: mbre
+    default_value: 0
+    flag: Mb
+    is_flag: true
+    max: 100
+    min: -100
+    name: Breathiness (Moresampler)
+    type: Numerical
+  mint:
+    abbr: mint
+    default_value: 100
+    flag: Mm
+    is_flag: true
+    max: 100
+    min: 0
+    name: Model Interpolation
+    type: Numerical
+  opn:
+    abbr: opn
+    default_value: 0
+    flag: Mo
+    is_flag: true
+    max: 100
+    min: -100
+    name: Openness
+    type: Numerical
+  pit:
+    abbr: pit
+    default_value: 0
+    flag: t
+    is_flag: true
+    max: 1200
+    min: -1200
+    name: Pitch deviation (flag)
+    type: Numerical
+  pkcp:
+    abbr: pkcp
+    default_value: 86
+    flag: P
+    is_flag: true
+    max: 100
+    min: 0
+    name: Peak Compressor
+    type: Numerical
+  res:
+    abbr: res
+    default_value: 0
+    flag: Mr
+    is_flag: true
+    max: 100
+    min: -100
+    name: Resonance
+    type: Numerical
+  stbl:
+    abbr: stbl
+    default_value: 0
+    flag: Ms
+    is_flag: true
+    max: 10
+    min: 0
+    name: Stabilization
+    type: Numerical
+  tens:
+    abbr: tens
+    default_value: 0
+    flag: Mt
+    is_flag: true
+    max: 100
+    min: -100
+    name: Tension
+    type: Numerical

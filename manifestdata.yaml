@@ -1,0 +1,199 @@
+# Manifests of different resamplers should be compatible as possible, so here I use python code to generate manifest for each resamplers.
+# Due to the limitation of OpenUTAU's current flags machanism, corrupted flags between different resamplers aren't included 
+
+#reference: https://www.tumblr.com/utau-bowl/647016314853097472/utau-flag-guide?source=share
+
+expressions:
+  amp:
+    name: Amplitude Modulation
+    abbr: amp
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: A
+  bre:
+    name: Breath
+    abbr: bre
+    type: Numerical
+    min: 50
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: B
+  gen:
+    name: Gender
+    abbr: gen
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: g
+  lpf:
+    name: Lowpass
+    abbr: lpf
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: H
+  mbre:
+    name: Breathiness (Moresampler)
+    abbr: mbre
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mb
+  cors:
+    name: Coarseness
+    abbr: cors
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: MC
+  dry:
+    name: Dryness
+    abbr: dry
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Md
+  dist:
+    name: Distortion
+    abbr: dist
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: MD
+  grwl:
+    name: Growl
+    abbr: grwl
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: MG
+  mint:
+    name: Model Interpolation
+    abbr: mint
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: true
+    flag: Mm
+  opn:
+    name: Openness
+    abbr: opn
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mo
+  res:
+    name: Resonance
+    abbr: res
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mr
+  stbl:
+    name: Stabilization
+    abbr: stbl
+    type: Numerical
+    min: 0
+    max: 10
+    default_value: 0
+    is_flag: true
+    flag: Ms
+  tens:
+    name: Tension
+    abbr: tens
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: Mt
+  bri:
+    name: Brightness
+    abbr: bri
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: O
+  pkcp:
+    name: Peak Compressor
+    abbr: pkcp
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 86
+    is_flag: true
+    flag: P
+  pit:
+    name: Pitch deviation (flag)
+    abbr: pit
+    type: Numerical
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: true
+    flag: t
+  fmts:
+    name: Formant Filter Off
+    abbr: fmts
+    type: Options
+    is_flag: true
+    options:
+    - ''
+    - "N"
+  fstr:
+    name: Force Stretch
+    abbr: fstr
+    type: Options
+    is_flag: true
+    options:
+    - ''
+    - e
+    - Me
+  rev:
+    name: Reverse
+    abbr: rev
+    type: Options
+    is_flag: true
+    options:
+    - ''
+    - R
+
+resamplers:
+  - name: doppeltler
+    supportedFlags: [bre,gen,pkcp,fmts,rev]
+  - name: f2resamp
+    supportedFlags: [bre,gen,pkcp,pit,fmts,rev]
+  - name: moresampler
+    supportedFlags: [amp,gen,mbre,tens,opn,res,dry,cors,grwl,dist,stbl,mint,pkcp,pit,fstr]
+  #TODO
+  #- name: resampler
+  #  supportedFlags: [bre,gen,lpf,pkcp,pit,fmts]
+  - name: tn_fnds
+    supportedFlags: [amp,bre,gen,bri,pit,fstr]
+  - name: world4utau
+    supportedFlags: [bre,gen,pkcp,bri]
