@@ -7,7 +7,8 @@ resampler manifests for OpenUtau
 * Place all the .yaml files in the "Resamplers" folder of your OpenUtau installation.
 
 ### usage
-You can add all the flags at once in `Expressions -> Add all expressions suggested by renderers`.
+* Open a project and select a resampler
+* You can add all the flags at once in `Expressions -> Add all expressions suggested by renderers`.
 
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/54425948/227085816-4cced732-98dd-4c76-bc40-9a94f971a066.png">
 
