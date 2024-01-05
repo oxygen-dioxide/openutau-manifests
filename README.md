@@ -13,7 +13,7 @@ resampler manifests for OpenUtau
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/54425948/227085816-4cced732-98dd-4c76-bc40-9a94f971a066.png">
 
 ## Note
-* Corrupted flags between different resamplers aren't included currently. For example, the `A` flag changes volume of notes depending on pitch in moresampler and tn_fnds, but emphasizes high frequencies in f2resamp. So `A` isn't included in f2resamp.yaml
+* Conflicting flags between different resamplers aren't included currently. For example, the `A` flag changes volume of notes depending on pitch in moresampler and tn_fnds, but emphasizes high frequencies in f2resamp. So `A` isn't included in f2resamp.yaml
 
 ## Links
 * [UTAU Flag guide](https://www.tumblr.com/utau-bowl/647016314853097472/utau-flag-guide?source=share) by Just UTAU Things
